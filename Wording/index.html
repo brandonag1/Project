@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="assets/ratchet-v2.0.2/css/ratchet.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/ratchet-v2.0.2/css/ratchet.min.css">
+        <style type="text/css">
+            html,body{
+              margin:0px;
+              padding:0px;
+            }
+            @font-face{
+              font-family: ubuntuLight;
+              src: url(assets/fonts/ubuntu-font-family-0.83/Ubuntu-B.ttf);
+            }
+            .btn-transparent {
+              color: #F3FFE2;
+              background:none;
+              border-color: #F3FFE2;
+            }
+            .btn-app-white{
+                color: #1695A3;
+                background: #ffffff;
+                border-color: #ffffff;
+                box-shadow: 2px 2px 2px #888888;
+                outline: none;
+            }
+            .btn-app-white:focus,
+            .btn-app-white:hover,
+            .btn-app-white:active,
+            .btn-app-white:link{
+                color: #1695A3;
+                background: #dedede;
+                border-color: #dedede;
+                outline: none;
+                box-shadow: 2px 2px 2px #888888;
+            }
+
+            .btn-primary-outline {
+              background-color: transparent;
+              color: #F3FFE2;
+              border:2px solid #F3FFE2;
+              box-shadow: 2px 2px 2px #888888;
+              outline: none;
+            }
+            .btn-primary-outline:focus,
+            .btn-primary-outline:hover,
+            .btn-primary-outline:active,
+            .btn-primary-outline:link{
+                background-color: transparent;
+                color: #F3FFE2;
+                border:2px solid #F3FFE2;
+                box-shadow: 2px 2px 2px #888888;
+                outline: none;
+            }
+            body{
+              background: url(assets/material/gifs/bgindex_1.gif) no-repeat center center fixed; 
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            }
+            .vertical-center{
+        position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:45%; bottom:0;
+        margin:auto;
+        transform: translateY(-45%);
+        /*this to solve "the content will not be cut when the window is smaller than the content": */
+        max-width:100%;
+        max-width: 100vh;
+        max-height: 100vh;
+        max-height:100%;
+            }
+        </style>
+        <!--Include jQuery Mobile stylesheets 
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        Include the jQuery library 
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+         Include the jQuery Mobile library 
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        -->
+    </head>
+
+    <body onload="init();" class="body" style="font-family: ubuntuLight;">
+        <div class="vertical-center">
+            <img src="assets/material/png/bower-logo.png" class="center-block" style="height: 150px; margin-bottom: 30px;" />
+            <div class="col-sm-12 col-xs-12" style="padding: 0px;">
+                <div class="col-xs-11 col-sm-10" style="margin:0 auto; display:block; float:none;">
+                
+                    <button class="btn btn-app-white" style="width:100%; padding:10px;">Get started</button>
+                
+                </div>
+            </div>
+            <div class="col-sm-12 col-xs-12" style="padding: 0px;">
+                <div class="col-xs-11 col-sm-10 center-block" style="margin:15px auto 0px auto; display:block; float:none;">
+                    <button class="btn btn-primary-outline" style="width:100%; padding:10px;">I already have an account</button>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script src="assets/ratchet-v2.0.2/js/ratchet.min.js"></script>
+        <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
